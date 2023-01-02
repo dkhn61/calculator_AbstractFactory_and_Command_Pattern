@@ -1,0 +1,52 @@
+arad@tesla:~/calculator/cs507-fall2022-assignment3$ valgrind ./assignment3
+==1326761== Memcheck, a memory error detector
+==1326761== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1326761== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1326761== Command: ./assignment3
+==1326761==
+Hello, Please enter expression to calculate !
+Enter expression:-
+( 6 % 2 ) + 8 / 78 - ( 923 + 8 )
+Postfix expression:- 62%878/+9238+-
+Result after calculation:- -931
+
+Enter expression:-
+98 + 98 * 100 - 100
+Postfix expression:- 9898100*+100-
+Result after calculation:- 9798
+
+Enter expression:-
+21 + 21 - 20 * 67
+Postfix expression:- 2121+2067*-
+Result after calculation:- -1298
+
+Enter expression:-
+6 - 3 / 8 * 9
+Postfix expression:- 638/9*-
+Result after calculation:- 6
+
+Enter expression:-
+GDG
+[INVALID Expression] Please enter valid expression !!
+Enter expression:-
+2 + 7
+Postfix expression:- 27+
+Result after calculation:- 9
+
+Enter expression:-
+QUIT
+==1326761==
+==1326761== HEAP SUMMARY:
+==1326761==     in use at exit: 720 bytes in 35 blocks
+==1326761==   total heap usage: 110 allocs, 75 frees, 91,079 bytes allocated
+==1326761==
+==1326761== LEAK SUMMARY:
+==1326761==    definitely lost: 720 bytes in 35 blocks
+==1326761==    indirectly lost: 0 bytes in 0 blocks
+==1326761==      possibly lost: 0 bytes in 0 blocks
+==1326761==    still reachable: 0 bytes in 0 blocks
+==1326761==         suppressed: 0 bytes in 0 blocks
+==1326761== Rerun with --leak-check=full to see details of leaked memory
+==1326761==
+==1326761== For lists of detected and suppressed errors, rerun with: -s
+==1326761== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
